@@ -17,7 +17,7 @@
               <Span style="font-size:18px"><a href="judge.html">Арбитраж</a></Span>
             </div>
             <div class="col col-lg-4" style="text-align:end;">
-                <button type="button" class="btn btn-info">Пополнить</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addFunds">Пополнить</button>
                 <span id=balance style="font-size:14px;color:black">$1000</span>&nbsp;/&nbsp;<span id=funds_on_hold style="font-size:14px;color:darkgray">$0</span>
                 <img src="users\u-00001-avatar.png" style="height:30px"/>
             </div>
@@ -27,7 +27,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-8">
                 <div class="text-center">
-                    <img name=user_avatar src="users\u-00001-avatar.png" style="height:120px;margin:20px;"/><BR/>
+                    <img name=user_avatar src="users\u-00002-avatar.png" style="height:120px;margin:20px;"/><BR/>
                     <span name=user_name style="font-size:14px;font-weight:bolder;">Василий Астровский</span><BR/>
                     <span name=user_spec style="font-size:12px;font-weight:normal;">Fullstack developer</span><BR/>
                     <button type="button" class="btn btn-secondary" style="margin:10px;" data-toggle="modal" data-target="#orderProject">Предложить проект</button>
@@ -65,7 +65,7 @@
                         </div>    
                         <div class="row align-items-center">
                             <div class="col-auto text-center">
-                                <img name=project_123123_cl_avatar src="users\u-00001-avatar.png" style="height:30px" />
+                                <img name=project_123123_cl_avatar src="users\u-00004-avatar.png" style="height:30px" />
                             </div>    
                             <div class="col">
                                 <span name=project_123123_cl_name style="font-size:10px">Yulianna_Tassel</span><BR/>
@@ -86,7 +86,7 @@
                         </div>    
                         <div class="row align-items-center">
                             <div class="col-auto text-center">
-                                <img name=project_234234_cl_avatar src="users\u-00001-avatar.png" style="height:30px" />
+                                <img name=project_234234_cl_avatar src="users\u-00005-avatar.png" style="height:30px" />
                             </div>    
                             <div class="col">
                                 <span name=project_234234_cl_name style="font-size:10px">Zloy_Geniy_Anonymus</span><BR/>
@@ -150,4 +150,29 @@
       </div>
     </div>
     
+<!-- Modal Project -->
+    <div class="modal fade" id="addFunds" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Пополнение счета</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row align-items-center">
+                <label class="col-3" for="add_funds_amount">Сумма</label>
+                <input type="number" class="col-4 form-control form-control-sm" id="add_funds_amount" value=1000>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary" onClick="$('#balance').text('$2000'); $('#addFunds').modal('hide');">Пополнить</button>
+          </div>
+        </div>
+      </div>
+    </div>    
 </Body>
