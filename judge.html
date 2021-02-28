@@ -1,0 +1,61 @@
+<Head>
+    <title>"SafeDeal - Сервис безопасных сделок - Арбитраж"</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</Head>        
+<Body style="background-color:#E5E5E5;padding:20px;">
+    <Div class=container-fluid id=header >
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col col-lg-2">
+                <Span style="font-size:24px; cursor:hand;" onclick="$(location).attr('href','index.html');">Safe<Span style="font-weight:bold">Deal</Span></span>
+            </div>
+            <div class="col-md-6">
+              <Span style="font-size:18px"><a href="judge.html">Арбитраж</a></Span>
+            </div>
+            <div class="col col-lg-4" style="text-align:end;">
+                <button type="button" class="btn btn-info">Пополнить</button>
+                <span id=balance style="font-size:14px;color:black">$1000</span>&nbsp;/&nbsp;<span id=funds_on_hold style="font-size:14px;color:darkgray">$0</span>
+                <img src="users\u-00001-avatar.png" style="height:30px"/>
+            </div>
+        </div>
+    </Div>
+    <Div class="container" id=body style="margin-top:20px;">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h4>Почему ты видешь этот проект?</h4>
+                    <p class="text-justify" style="font-size:12px;font-weight:normal;">Мы выдаем случайные проекты по ключевым компетенциям исполнителя у которого есть не менее 2х успешно закрытых проектов. Вы как никто другой можете точно сказать, кто прав в этом споре. Ознакомьтесь с условиями проекта, ходом работ и результатом. Вы получите компенсацию в 1$ за каждый отсмотренный проект. Ваш голос останется полностью анонимным. Пожалуйста, сохраняйте объективность.</p>
+                </div>
+
+                <div class="container card rounded" style="padding:20px;margin-bottom:10px; background-color:white;">
+                    <div class="row align-items-center">
+                        <div name=project_234234_name class="col-9" style="font-size:14px;font-weight:bold;">Портреты</div>
+                        <div name=project_234234_price class="col-3 text-right" style="font-size:14px;font-weight:bold;">$600</div>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <p class="text-justify" style="font-size:12px; margin-top:10px;">Нужно нарисовать 12 портетов в технике акварель и оцифровать их для размещения на сайте</p>
+                        </div>    
+                    </div>    
+                    <div class="row align-items-bottom">
+                        <div class="col-auto text-center">
+                            <img name=project_234234_cl_avatar src="users\u-00001-avatar.png" style="height:30px" />
+                        </div>    
+                        <div class="col">
+                            <span name=project_234234_cl_name style="font-size:10px">Yulianna_Tassel</span><BR/>
+                            <span name=project_234234_cl_time style="font-size:10px">сегодня, 10:10</span>
+                        </div>    
+                        <div class="col text-right">
+                            <button type="button" class="btn btn-secondary" style="margin:10px;" OnCLick="$(location).attr('href','judge_detail.html');">Рассудить</button>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+        </div>
+    </Div>
+    
+</Body>

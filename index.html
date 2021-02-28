@@ -1,0 +1,153 @@
+<Head>
+    <title>"SafeDeal - Сервис безопасных сделок"</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</Head>        
+<Body style="background-color:#E5E5E5;padding:20px;">
+    <Div class=container-fluid id=header >
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col col-lg-2">
+                <Span style="font-size:24px; cursor:hand;" onclick="$(location).attr('href','index.html');">Safe<Span style="font-weight:bold">Deal</Span></span>
+            </div>
+            <div class="col-md-6">
+              <Span style="font-size:18px"><a href="judge.html">Арбитраж</a></Span>
+            </div>
+            <div class="col col-lg-4" style="text-align:end;">
+                <button type="button" class="btn btn-info">Пополнить</button>
+                <span id=balance style="font-size:14px;color:black">$1000</span>&nbsp;/&nbsp;<span id=funds_on_hold style="font-size:14px;color:darkgray">$0</span>
+                <img src="users\u-00001-avatar.png" style="height:30px"/>
+            </div>
+        </div>
+    </Div>
+    <Div class="container" id=body style="margin-top:20px;">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <img name=user_avatar src="users\u-00001-avatar.png" style="height:120px;margin:20px;"/><BR/>
+                    <span name=user_name style="font-size:14px;font-weight:bolder;">Василий Астровский</span><BR/>
+                    <span name=user_spec style="font-size:12px;font-weight:normal;">Fullstack developer</span><BR/>
+                    <button type="button" class="btn btn-secondary" style="margin:10px;" data-toggle="modal" data-target="#orderProject">Предложить проект</button>
+                </div>
+                <div class="text-justify" style="margin:25px">
+                    <h4>Oбо мне</h4>
+                    <p style="color:darkgray">1,5 года опыта · Английский Pre-Intermediate [?]</p>
+                    <p style="font-size:12px;">Я пишу код для кросс-браузерных и адаптивных веб-сайтов любой сложности ( с использованием HTML5, CSS3, JavaScript ) с его дальнейшим размещением на хостинге. При необходимости, Я предварительно разрабатываю дизайн и готовлю прототип будущего веб-сайта с использованием Figma , создаю макет в Photoshop. В своей работе использую GitHub, Gulp4, NPM, Yarn.
+Сейчас Я практикую React и Redux. пишу приложения в React Native.</p>
+                </div>
+                <div class="text-justify" style="margin:25px">
+                    <h4>Экспертиза</h4>
+                    <p style="font-size:12px;">JavaScript, Redux, React, Git, HTML5, ES6+, HTML, CSS3, JSON, SASS/SCSS, es6</p>
+                </div>
+                <div class="text-justify" style="margin:25px">
+                    <h4>Достижения</h4>
+                    <p style="font-size:12px;">Два безукоризненно исполненных проекта прямо в безопасной сделки. Диплом International Coding School.</p>
+                </div>
+                <div class="text-justify" style="margin:25px">
+                    <h4>Ожидания от работы</h4>
+                    <p style="font-size:12px;">пишу код для сайтов на HTML5, CSS3, JS,<BR/>
+хочу писать приложения на React или React Native, участвовать в проектах.</p>
+                </div>
+                <div class="text-justify" style="margin:25px">
+                    <h4>История проектов</h4>
+                    <div class="container card rounded" style="padding:20px;margin-bottom:10px; background-color:white;">
+                        <div class="row align-items-center">
+                            <div name=project_123123_name class="col-9" style="font-size:14px;font-weight:bold;">Верстка сайта под ключ</div>
+                            <div name=project_123123_price class="col-3 text-right" style="font-size:14px;font-weight:bold;">$500</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p name=project_123123_descr style="font-size:12px; margin-top:10px;">Разработать сайт ветеренарной клиники по готовому макету и разместить на нашем домене и хостинге</p>
+                            </div>    
+                        </div>    
+                        <div class="row align-items-center">
+                            <div class="col-auto text-center">
+                                <img name=project_123123_cl_avatar src="users\u-00001-avatar.png" style="height:30px" />
+                            </div>    
+                            <div class="col">
+                                <span name=project_123123_cl_name style="font-size:10px">Yulianna_Tassel</span><BR/>
+                                <span name=project_123123_cl_time style="font-size:10px">сегодня, 10:10</span>
+                            </div>    
+                        </div>    
+                    </div>    
+                    <div class="container card rounded" style="padding:20px;margin-bottom:10px; background-color:white;">
+                        <div class="row align-items-center">
+                            <div name=project_234234_name class="col-9" style="font-size:14px;font-weight:bold;">Правка страницы</div>
+                            <div name=project_234234_price class="col-3 text-right" style="font-size:14px;font-weight:bold;">$30</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p name=project_234234_descr style="font-size:12px; margin-top:10px;">Нужно быстренько поправить верстку страницы интернет-магазина на Word Press<br/>
+                                Дедлайн сегодня, а задач полно.</p>
+                            </div>    
+                        </div>    
+                        <div class="row align-items-center">
+                            <div class="col-auto text-center">
+                                <img name=project_234234_cl_avatar src="users\u-00001-avatar.png" style="height:30px" />
+                            </div>    
+                            <div class="col">
+                                <span name=project_234234_cl_name style="font-size:10px">Zloy_Geniy_Anonymus</span><BR/>
+                                <span name=project_234234_cl_time style="font-size:10px">сегодня, 10:10</span>
+                            </div>    
+                        </div>    
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </Div>
+    
+    <!-- Modal Project -->
+    <div class="modal fade" id="orderProject" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Детали проекта</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="project_name">Назвнаие проекта</label>
+                <input type="text" class="form-control form-control-sm" id="project_name">
+              </div>
+              <div class="form-group">
+                <label for="project_desc">Описание проекта</label>
+                <textarea class="form-control" id="project_desc" rows="3"></textarea>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-3" for="project_deadline">Дедлайн</label>
+                <input type="date" class="col-4 form-control form-control-sm" id="project_deadline">
+              </div>
+              <div class="form-group">
+                <label for="project_checklist">Чеклист</label>
+                <textarea class="form-control form-control-sm" id="project_checklist" rows="2" aria-describedby="checklistHelp"></textarea>
+                <small id="checklistHelp" class="form-text text-muted">Каждый пункт чеклиста с новой строки</small>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-3" for="project_cost">Сумма</label>
+                <input type="number" class="col-4 form-control form-control-sm" id="project_cost" value=0>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-3" for="project_file">Файл</label>
+                <input type="file" class="col-8 form-control" id="project_file">
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-3" for="project_comment">Комментарий</label>
+                <input type="text" class="col-8 form-control form-control-sm" id="project_comment">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary" onClick="$('#funds_on_hold').text('$'+$('#project_cost').val()); $('#orderProject').modal('hide'); $(location).attr('href','project.html');">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</Body>
